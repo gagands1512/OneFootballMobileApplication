@@ -66,11 +66,11 @@ public class MobileAutomationTest {
         
         driver.findElementByAndroidUIAutomator("UiSelector().text(\"OKAY!\")").click();
         
-        driver.findElementById("(motain.iliga:id/fixed_bottom_navigation_icon).index(1)").click();
+        driver.findElementByAndroidUIAutomator("UiSelector().text(\"Games\")").click();
         
         driver.findElementByAndroidUIAutomator("UiSelector().text(\"All\")").click();
         
-        String visibleText2 = "UEFA EURO 2020";
+        String visibleText2 = "UEFA EURO 2020™";
         driver.findElementByAndroidUIAutomator
         ("new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\"" + visibleText2 + "\").instance(0))").click();
         
